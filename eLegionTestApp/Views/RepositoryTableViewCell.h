@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class RepositoryModel;
+@class Repository, RepositoryModel;
 @interface RepositoryTableViewCell : UITableViewCell
 
-- (void)setupWithRepo:(RepositoryModel *)repo;
+- (void)setupWithRepository:(Repository *)repo;
+- (void)setupWithRepoModel:(RepositoryModel *)repo;
 
 @end

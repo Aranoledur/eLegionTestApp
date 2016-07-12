@@ -11,6 +11,7 @@
 #import "SearchRequest.h"
 #import "Repository.h"
 #import "RepositoryModel.h"
+#import "DatabaseManager.h"
 #import <AFNetworking/AFNetworking.h>
 
 @interface SearchTableViewController ()<UISearchResultsUpdating, UISearchBarDelegate>
@@ -37,11 +38,7 @@
     self.searchController.searchBar.delegate = self;
     self.tableView.tableHeaderView = self.searchController.searchBar;
     self.title = @"Search";
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 #pragma mark - Table view data source
@@ -62,10 +59,27 @@
     RepositoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([RepositoryTableViewCell class]) forIndexPath:indexPath];
     RepositoryModel *data = [self itemForIndexPath:indexPath];
     if (data) {
-        [cell setupWithRepo:data];
+        [cell setupWithRepoModel:data];
     }
+    cell.selected = [[DatabaseManager sharedInstance] repositoryExistsWithID:data._id];
     
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    RepositoryModel *model = [self itemForIndexPath:indexPath];
+    if (model != nil) {
+        [[DatabaseManager sharedInstance] addOrUpdateRepoWithModel:model];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    RepositoryModel *model = [self itemForIndexPath:indexPath];
+    if (model != nil) {
+        [[DatabaseManager sharedInstance] deleteRepoByID:model._id];
+    }
 }
 
 #pragma mark - UISearchBarDelegate

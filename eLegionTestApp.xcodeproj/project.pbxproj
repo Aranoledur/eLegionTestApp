@@ -25,6 +25,7 @@
 		9494FAA91D356695001996EE /* RepositoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FAA71D356695001996EE /* RepositoryModel.m */; };
 		9494FAAC1D3566BC001996EE /* RepositoryOwnerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FAAB1D3566BC001996EE /* RepositoryOwnerModel.m */; };
 		9494FAB01D356C0A001996EE /* JSONValueTransformer+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FAAF1D356C0A001996EE /* JSONValueTransformer+ISO8601.m */; };
+		9494FAB81D3575DB001996EE /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FAB71D3575DB001996EE /* DatabaseManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,8 @@
 		9494FAAB1D3566BC001996EE /* RepositoryOwnerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryOwnerModel.m; sourceTree = "<group>"; };
 		9494FAAE1D356C0A001996EE /* JSONValueTransformer+ISO8601.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+ISO8601.h"; sourceTree = "<group>"; };
 		9494FAAF1D356C0A001996EE /* JSONValueTransformer+ISO8601.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+ISO8601.m"; sourceTree = "<group>"; };
+		9494FAB61D3575DB001996EE /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
+		9494FAB71D3575DB001996EE /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
 		9E4558DF5D170837F4562423 /* Pods-eLegionTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eLegionTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-eLegionTestApp/Pods-eLegionTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		B11538F8EA588A77E0265764 /* Pods-eLegionTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eLegionTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eLegionTestApp/Pods-eLegionTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E97069F4B0C5201BE59EC6EB /* Pods_eLegionTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eLegionTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +101,7 @@
 		9494FA2F1D352354001996EE /* eLegionTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				9494FAB51D3575CF001996EE /* DatabaseManager */,
 				9494FA661D353D12001996EE /* Model */,
 				9494FA601D3529C2001996EE /* Network */,
 				9494FA5B1D35273C001996EE /* NetworkManager */,
@@ -203,6 +207,15 @@
 				9494FAAF1D356C0A001996EE /* JSONValueTransformer+ISO8601.m */,
 			);
 			path = JSONValueTransformer;
+			sourceTree = "<group>";
+		};
+		9494FAB51D3575CF001996EE /* DatabaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				9494FAB61D3575DB001996EE /* DatabaseManager.h */,
+				9494FAB71D3575DB001996EE /* DatabaseManager.m */,
+			);
+			path = DatabaseManager;
 			sourceTree = "<group>";
 		};
 		9C3B057875D18872C6C4941A /* Frameworks */ = {
@@ -352,6 +365,7 @@
 				9494FAA81D356695001996EE /* RepoListRequestModel.m in Sources */,
 				9494FAB01D356C0A001996EE /* JSONValueTransformer+ISO8601.m in Sources */,
 				9494FA551D352546001996EE /* RepositoryTableViewCell.m in Sources */,
+				9494FAB81D3575DB001996EE /* DatabaseManager.m in Sources */,
 				9494FAA91D356695001996EE /* RepositoryModel.m in Sources */,
 				9494FAA11D356624001996EE /* Repository.m in Sources */,
 				9494FA631D3529CF001996EE /* SearchRequest.m in Sources */,

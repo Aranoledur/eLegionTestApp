@@ -7,8 +7,7 @@
 //
 
 #import "Repository.h"
-
-@import ObjectiveC.runtime;
+#import "RepositoryModel.h"
 
 @implementation Repository
 
@@ -37,6 +36,23 @@
             } else {
                 [self setValue:dict[propName] forKey:propName];
             }
+        }
+    }
+    
+    return self;
+}
+
+- (instancetype)initWithModel:(RepositoryModel *)model {
+    self = [super init];
+    if (!self) {
+        return nil;
+    }
+    
+    for (RLMProperty *prop in self.objectSchema.properties) {
+        NSString *propName = prop.name;
+        id value = [model valueForKey:propName];
+        if (value != nil) {
+            [self setValue:value forKey:propName];
         }
     }
     

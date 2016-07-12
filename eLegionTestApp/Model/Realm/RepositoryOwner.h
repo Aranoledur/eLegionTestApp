@@ -8,6 +8,7 @@
 
 #import <Realm/Realm.h>
 
+@class RepositoryOwnerModel;
 @interface RepositoryOwner : RLMObject
 
 @property NSInteger _id;
@@ -17,5 +18,7 @@
 @property NSString *url;
 @property NSString *received_events_url;
 @property NSString *type;
+
+- (instancetype)initWithModel:(RepositoryOwnerModel *)model;
 
 @end

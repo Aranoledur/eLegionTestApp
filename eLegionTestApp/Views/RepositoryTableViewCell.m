@@ -7,6 +7,7 @@
 //
 
 #import "RepositoryTableViewCell.h"
+#import "Repository.h"
 #import "RepositoryModel.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
@@ -26,7 +27,15 @@
     self.selectionImageView.image = selectionImage;
 }
 
-- (void)setupWithRepo:(RepositoryModel *)repo {
+- (void)setupWithRepository:(Repository *)repo {
+    self.nameLabel.text = repo.name;
+    [self.avatarImageView setShowActivityIndicatorView:YES];
+    [self.avatarImageView setIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    [self.avatarImageView sd_setImageWithURL:[NSURL URLWithString:repo.owner.avatar_url]];
+    self.selectionImageView.hidden = YES;
+}
+
+- (void)setupWithRepoModel:(RepositoryModel *)repo {
     self.nameLabel.text = repo.name;
     [self.avatarImageView setShowActivityIndicatorView:YES];
     [self.avatarImageView setIndicatorStyle:UIActivityIndicatorViewStyleGray];

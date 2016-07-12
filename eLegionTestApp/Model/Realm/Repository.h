@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <Realm/Realm.h>
+#import "RepositoryOwner.h"
 
-@class RepositoryOwner;
+@class RepositoryModel;
 @interface Repository : RLMObject
 
 @property NSInteger _id;
@@ -36,5 +37,6 @@
 @property NSInteger score;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
+- (instancetype)initWithModel:(RepositoryModel *)model;
 
 @end
