@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		384B9414A6A68DB48270D7B0 /* Pods_eLegionTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97069F4B0C5201BE59EC6EB /* Pods_eLegionTestApp.framework */; };
 		9494FA321D352354001996EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FA311D352354001996EE /* main.m */; };
 		9494FA351D352354001996EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FA341D352354001996EE /* AppDelegate.m */; };
-		9494FA381D352354001996EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FA371D352354001996EE /* ViewController.m */; };
 		9494FA3B1D352354001996EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9494FA391D352354001996EE /* Main.storyboard */; };
 		9494FA3D1D352354001996EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9494FA3C1D352354001996EE /* Assets.xcassets */; };
 		9494FA401D352354001996EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9494FA3E1D352354001996EE /* LaunchScreen.storyboard */; };
+		9494FA4F1D35252C001996EE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FA4C1D35252C001996EE /* MainViewController.m */; };
+		9494FA501D35252C001996EE /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FA4E1D35252C001996EE /* SearchTableViewController.m */; };
+		9494FA551D352546001996EE /* RepositoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FA531D352546001996EE /* RepositoryTableViewCell.m */; };
+		9494FA561D352546001996EE /* RepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9494FA541D352546001996EE /* RepositoryTableViewCell.xib */; };
+		9494FA5E1D35273C001996EE /* PHNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FA5D1D35273C001996EE /* PHNetworkManager.m */; };
+		9494FA631D3529CF001996EE /* SearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FA621D3529CF001996EE /* SearchRequest.m */; };
+		9494FA691D354146001996EE /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FA681D354146001996EE /* Repository.m */; };
+		9494FA6C1D35438C001996EE /* RepositoryOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FA6B1D35438C001996EE /* RepositoryOwner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +28,29 @@
 		9494FA311D352354001996EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9494FA331D352354001996EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9494FA341D352354001996EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9494FA361D352354001996EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9494FA371D352354001996EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9494FA3A1D352354001996EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9494FA3C1D352354001996EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9494FA3F1D352354001996EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9494FA411D352354001996EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9494FA4B1D35252C001996EE /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		9494FA4C1D35252C001996EE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		9494FA4D1D35252C001996EE /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		9494FA4E1D35252C001996EE /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		9494FA521D352546001996EE /* RepositoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryTableViewCell.h; sourceTree = "<group>"; };
+		9494FA531D352546001996EE /* RepositoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryTableViewCell.m; sourceTree = "<group>"; };
+		9494FA541D352546001996EE /* RepositoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepositoryTableViewCell.xib; sourceTree = "<group>"; };
+		9494FA5C1D35273C001996EE /* PHNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHNetworkManager.h; sourceTree = "<group>"; };
+		9494FA5D1D35273C001996EE /* PHNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHNetworkManager.m; sourceTree = "<group>"; };
+		9494FA5F1D352749001996EE /* NetworkConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkConfig.h; sourceTree = "<group>"; };
+		9494FA611D3529CF001996EE /* SearchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchRequest.h; sourceTree = "<group>"; };
+		9494FA621D3529CF001996EE /* SearchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchRequest.m; sourceTree = "<group>"; };
+		9494FA671D354146001996EE /* Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
+		9494FA681D354146001996EE /* Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Repository.m; sourceTree = "<group>"; };
+		9494FA6A1D35438C001996EE /* RepositoryOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryOwner.h; sourceTree = "<group>"; };
+		9494FA6B1D35438C001996EE /* RepositoryOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryOwner.m; sourceTree = "<group>"; };
+		9E4558DF5D170837F4562423 /* Pods-eLegionTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eLegionTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-eLegionTestApp/Pods-eLegionTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		B11538F8EA588A77E0265764 /* Pods-eLegionTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eLegionTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eLegionTestApp/Pods-eLegionTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E97069F4B0C5201BE59EC6EB /* Pods_eLegionTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eLegionTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				384B9414A6A68DB48270D7B0 /* Pods_eLegionTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +70,8 @@
 			children = (
 				9494FA2F1D352354001996EE /* eLegionTestApp */,
 				9494FA2E1D352354001996EE /* Products */,
+				C1D43334528ED246E2A9F688 /* Pods */,
+				9C3B057875D18872C6C4941A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +86,13 @@
 		9494FA2F1D352354001996EE /* eLegionTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				9494FA661D353D12001996EE /* Model */,
+				9494FA601D3529C2001996EE /* Network */,
+				9494FA5B1D35273C001996EE /* NetworkManager */,
+				9494FA511D352536001996EE /* Views */,
+				9494FA4A1D35252C001996EE /* ViewControllers */,
 				9494FA331D352354001996EE /* AppDelegate.h */,
 				9494FA341D352354001996EE /* AppDelegate.m */,
-				9494FA361D352354001996EE /* ViewController.h */,
-				9494FA371D352354001996EE /* ViewController.m */,
 				9494FA391D352354001996EE /* Main.storyboard */,
 				9494FA3C1D352354001996EE /* Assets.xcassets */,
 				9494FA3E1D352354001996EE /* LaunchScreen.storyboard */,
@@ -79,6 +110,74 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9494FA4A1D35252C001996EE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9494FA4B1D35252C001996EE /* MainViewController.h */,
+				9494FA4C1D35252C001996EE /* MainViewController.m */,
+				9494FA4D1D35252C001996EE /* SearchTableViewController.h */,
+				9494FA4E1D35252C001996EE /* SearchTableViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9494FA511D352536001996EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9494FA521D352546001996EE /* RepositoryTableViewCell.h */,
+				9494FA531D352546001996EE /* RepositoryTableViewCell.m */,
+				9494FA541D352546001996EE /* RepositoryTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9494FA5B1D35273C001996EE /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				9494FA5F1D352749001996EE /* NetworkConfig.h */,
+				9494FA5C1D35273C001996EE /* PHNetworkManager.h */,
+				9494FA5D1D35273C001996EE /* PHNetworkManager.m */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		9494FA601D3529C2001996EE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9494FA611D3529CF001996EE /* SearchRequest.h */,
+				9494FA621D3529CF001996EE /* SearchRequest.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9494FA661D353D12001996EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9494FA671D354146001996EE /* Repository.h */,
+				9494FA681D354146001996EE /* Repository.m */,
+				9494FA6A1D35438C001996EE /* RepositoryOwner.h */,
+				9494FA6B1D35438C001996EE /* RepositoryOwner.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9C3B057875D18872C6C4941A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E97069F4B0C5201BE59EC6EB /* Pods_eLegionTestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1D43334528ED246E2A9F688 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B11538F8EA588A77E0265764 /* Pods-eLegionTestApp.debug.xcconfig */,
+				9E4558DF5D170837F4562423 /* Pods-eLegionTestApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9494FA441D352354001996EE /* Build configuration list for PBXNativeTarget "eLegionTestApp" */;
 			buildPhases = (
+				E41D2F4BE735FC6453731CA6 /* [CP] Check Pods Manifest.lock */,
 				9494FA291D352354001996EE /* Sources */,
 				9494FA2A1D352354001996EE /* Frameworks */,
 				9494FA2B1D352354001996EE /* Resources */,
+				580FD92ABC0D6F21B4122CAE /* [CP] Embed Pods Frameworks */,
+				006F8BE76465CCD9CAF622F5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,19 +241,74 @@
 				9494FA401D352354001996EE /* LaunchScreen.storyboard in Resources */,
 				9494FA3D1D352354001996EE /* Assets.xcassets in Resources */,
 				9494FA3B1D352354001996EE /* Main.storyboard in Resources */,
+				9494FA561D352546001996EE /* RepositoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		006F8BE76465CCD9CAF622F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eLegionTestApp/Pods-eLegionTestApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		580FD92ABC0D6F21B4122CAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eLegionTestApp/Pods-eLegionTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E41D2F4BE735FC6453731CA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9494FA291D352354001996EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9494FA381D352354001996EE /* ViewController.m in Sources */,
+				9494FA6C1D35438C001996EE /* RepositoryOwner.m in Sources */,
 				9494FA351D352354001996EE /* AppDelegate.m in Sources */,
+				9494FA4F1D35252C001996EE /* MainViewController.m in Sources */,
 				9494FA321D352354001996EE /* main.m in Sources */,
+				9494FA551D352546001996EE /* RepositoryTableViewCell.m in Sources */,
+				9494FA631D3529CF001996EE /* SearchRequest.m in Sources */,
+				9494FA5E1D35273C001996EE /* PHNetworkManager.m in Sources */,
+				9494FA501D35252C001996EE /* SearchTableViewController.m in Sources */,
+				9494FA691D354146001996EE /* Repository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +420,7 @@
 		};
 		9494FA451D352354001996EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B11538F8EA588A77E0265764 /* Pods-eLegionTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = eLegionTestApp/Info.plist;
@@ -274,6 +432,7 @@
 		};
 		9494FA461D352354001996EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E4558DF5D170837F4562423 /* Pods-eLegionTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = eLegionTestApp/Info.plist;
@@ -302,6 +461,7 @@
 				9494FA461D352354001996EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
