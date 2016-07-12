@@ -1,16 +1,16 @@
 //
-//  RepositoryOwner.h
+//  RepositoryOwnerModel.h
 //  eLegionTestApp
 //
 //  Created by Nikolay Ischuk on 12.07.16.
 //  Copyright © 2016 Nikolay Ischuk. All rights reserved.
 //
 
-#import <Realm/Realm.h>
+#import <JSONModel/JSONModel.h>
 
-@interface RepositoryOwner : RLMObject
+@interface RepositoryOwnerModel : JSONModel
 
-@property NSNumber *_id;
+@property NSInteger _id;
 @property NSString *login;
 @property NSString *avatar_url;
 @property NSString *gravatar_id;

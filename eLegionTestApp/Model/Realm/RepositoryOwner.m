@@ -10,4 +10,8 @@
 
 @implementation RepositoryOwner
 
++ (NSString *)primaryKey {
+    return @"id";
+}
+
 @end

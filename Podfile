@@ -8,6 +8,9 @@ target 'eLegionTestApp' do
   # Pods for eLegionTestApp
 
     pod 'Realm'
+    pod 'JSONModel'
+    pod 'ISO8601'
     pod 'AFNetworking'
+    pod 'SDWebImage'
 
 end

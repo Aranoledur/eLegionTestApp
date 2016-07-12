@@ -7,18 +7,30 @@
 //
 
 #import "RepositoryTableViewCell.h"
+#import "RepositoryModel.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+
+@interface RepositoryTableViewCell ()
+@property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *selectionImageView;
+
+@end
 
 @implementation RepositoryTableViewCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
-
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
+    
+    UIImage *selectionImage = [UIImage imageNamed: selected ? @"subButtonComplete" : @"subButtonAdd"];
+    self.selectionImageView.image = selectionImage;
+}
 
-    // Configure the view for the selected state
+- (void)setupWithRepo:(RepositoryModel *)repo {
+    self.nameLabel.text = repo.name;
+    [self.avatarImageView setShowActivityIndicatorView:YES];
+    [self.avatarImageView setIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    [self.avatarImageView sd_setImageWithURL:[NSURL URLWithString:repo.owner.avatar_url]];
 }
 
 @end

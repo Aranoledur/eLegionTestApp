@@ -14,18 +14,29 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - ISO8601 (0.6.0)
+  - JSONModel (1.2.0)
   - Realm (1.0.1):
     - Realm/Headers (= 1.0.1)
   - Realm/Headers (1.0.1)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
 
 DEPENDENCIES:
   - AFNetworking
+  - ISO8601
+  - JSONModel
   - Realm
+  - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  ISO8601: d3ea3ba9b752820cf92c6b47a9ee327e9f0e13fc
+  JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
   Realm: 2e15e39d35b08abb529e212ed5d8af107b5236c8
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
 
-PODFILE CHECKSUM: db1c884b6dc71e4a9dacc9580ea0a94eb901b69a
+PODFILE CHECKSUM: dc8302995acb2038c8a22f11239ec7b5af0d302d
 
 COCOAPODS: 1.0.1

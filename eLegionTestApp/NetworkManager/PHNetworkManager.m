@@ -35,7 +35,7 @@
     
     if( self )
     {
-        self.manager = [[AFHTTPSessionManager alloc] init];
+        self.manager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:kBaseURLString]];
         self.manager.requestSerializer = [AFJSONRequestSerializer serializer];
         self.manager.responseSerializer = [AFJSONResponseSerializer serializer];
     }
@@ -49,14 +49,11 @@
            withSuccessBlock:(SuccessBlock)successBlock
             andFailureBlock:(FailureBlock)failureBlock
 {
-    
-    NSString *URL = [NSString stringWithFormat:@"%@%@", kBaseURLString, url];
-    
     switch (type)
     {
         case RequestTypeGet:
         {
-            return [self sendGetRequestByURL:URL
+            return [self sendGetRequestByURL:url
                            withParams:params
                      withSuccessBlock:successBlock
                          failureBlock:failureBlock];
@@ -65,7 +62,7 @@
             
         case RequestTypePost:
         {
-            return [self sendPostRequestByURL:URL
+            return [self sendPostRequestByURL:url
                             withParams:params
                       withSuccessBlock:successBlock
                           failureBlock:failureBlock];

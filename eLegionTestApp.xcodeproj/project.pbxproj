@@ -19,8 +19,12 @@
 		9494FA561D352546001996EE /* RepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9494FA541D352546001996EE /* RepositoryTableViewCell.xib */; };
 		9494FA5E1D35273C001996EE /* PHNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FA5D1D35273C001996EE /* PHNetworkManager.m */; };
 		9494FA631D3529CF001996EE /* SearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FA621D3529CF001996EE /* SearchRequest.m */; };
-		9494FA691D354146001996EE /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FA681D354146001996EE /* Repository.m */; };
-		9494FA6C1D35438C001996EE /* RepositoryOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FA6B1D35438C001996EE /* RepositoryOwner.m */; };
+		9494FAA11D356624001996EE /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FA9C1D356624001996EE /* Repository.m */; };
+		9494FAA21D356624001996EE /* RepositoryOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FA9E1D356624001996EE /* RepositoryOwner.m */; };
+		9494FAA81D356695001996EE /* RepoListRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FAA51D356695001996EE /* RepoListRequestModel.m */; };
+		9494FAA91D356695001996EE /* RepositoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FAA71D356695001996EE /* RepositoryModel.m */; };
+		9494FAAC1D3566BC001996EE /* RepositoryOwnerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FAAB1D3566BC001996EE /* RepositoryOwnerModel.m */; };
+		9494FAB01D356C0A001996EE /* JSONValueTransformer+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FAAF1D356C0A001996EE /* JSONValueTransformer+ISO8601.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,10 +48,18 @@
 		9494FA5F1D352749001996EE /* NetworkConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkConfig.h; sourceTree = "<group>"; };
 		9494FA611D3529CF001996EE /* SearchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchRequest.h; sourceTree = "<group>"; };
 		9494FA621D3529CF001996EE /* SearchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchRequest.m; sourceTree = "<group>"; };
-		9494FA671D354146001996EE /* Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
-		9494FA681D354146001996EE /* Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Repository.m; sourceTree = "<group>"; };
-		9494FA6A1D35438C001996EE /* RepositoryOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryOwner.h; sourceTree = "<group>"; };
-		9494FA6B1D35438C001996EE /* RepositoryOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryOwner.m; sourceTree = "<group>"; };
+		9494FA9B1D356624001996EE /* Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
+		9494FA9C1D356624001996EE /* Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Repository.m; sourceTree = "<group>"; };
+		9494FA9D1D356624001996EE /* RepositoryOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryOwner.h; sourceTree = "<group>"; };
+		9494FA9E1D356624001996EE /* RepositoryOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryOwner.m; sourceTree = "<group>"; };
+		9494FAA41D356695001996EE /* RepoListRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepoListRequestModel.h; sourceTree = "<group>"; };
+		9494FAA51D356695001996EE /* RepoListRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepoListRequestModel.m; sourceTree = "<group>"; };
+		9494FAA61D356695001996EE /* RepositoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryModel.h; sourceTree = "<group>"; };
+		9494FAA71D356695001996EE /* RepositoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryModel.m; sourceTree = "<group>"; };
+		9494FAAA1D3566BC001996EE /* RepositoryOwnerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryOwnerModel.h; sourceTree = "<group>"; };
+		9494FAAB1D3566BC001996EE /* RepositoryOwnerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryOwnerModel.m; sourceTree = "<group>"; };
+		9494FAAE1D356C0A001996EE /* JSONValueTransformer+ISO8601.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+ISO8601.h"; sourceTree = "<group>"; };
+		9494FAAF1D356C0A001996EE /* JSONValueTransformer+ISO8601.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+ISO8601.m"; sourceTree = "<group>"; };
 		9E4558DF5D170837F4562423 /* Pods-eLegionTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eLegionTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-eLegionTestApp/Pods-eLegionTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		B11538F8EA588A77E0265764 /* Pods-eLegionTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eLegionTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eLegionTestApp/Pods-eLegionTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E97069F4B0C5201BE59EC6EB /* Pods_eLegionTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eLegionTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,12 +165,44 @@
 		9494FA661D353D12001996EE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9494FA671D354146001996EE /* Repository.h */,
-				9494FA681D354146001996EE /* Repository.m */,
-				9494FA6A1D35438C001996EE /* RepositoryOwner.h */,
-				9494FA6B1D35438C001996EE /* RepositoryOwner.m */,
+				9494FAA31D356695001996EE /* JSON */,
+				9494FA9A1D356624001996EE /* Realm */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9494FA9A1D356624001996EE /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				9494FA9B1D356624001996EE /* Repository.h */,
+				9494FA9C1D356624001996EE /* Repository.m */,
+				9494FA9D1D356624001996EE /* RepositoryOwner.h */,
+				9494FA9E1D356624001996EE /* RepositoryOwner.m */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		9494FAA31D356695001996EE /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				9494FAAD1D356C0A001996EE /* JSONValueTransformer */,
+				9494FAA41D356695001996EE /* RepoListRequestModel.h */,
+				9494FAA51D356695001996EE /* RepoListRequestModel.m */,
+				9494FAA61D356695001996EE /* RepositoryModel.h */,
+				9494FAA71D356695001996EE /* RepositoryModel.m */,
+				9494FAAA1D3566BC001996EE /* RepositoryOwnerModel.h */,
+				9494FAAB1D3566BC001996EE /* RepositoryOwnerModel.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		9494FAAD1D356C0A001996EE /* JSONValueTransformer */ = {
+			isa = PBXGroup;
+			children = (
+				9494FAAE1D356C0A001996EE /* JSONValueTransformer+ISO8601.h */,
+				9494FAAF1D356C0A001996EE /* JSONValueTransformer+ISO8601.m */,
+			);
+			path = JSONValueTransformer;
 			sourceTree = "<group>";
 		};
 		9C3B057875D18872C6C4941A /* Frameworks */ = {
@@ -300,15 +344,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9494FA6C1D35438C001996EE /* RepositoryOwner.m in Sources */,
 				9494FA351D352354001996EE /* AppDelegate.m in Sources */,
+				9494FAA21D356624001996EE /* RepositoryOwner.m in Sources */,
 				9494FA4F1D35252C001996EE /* MainViewController.m in Sources */,
 				9494FA321D352354001996EE /* main.m in Sources */,
+				9494FAAC1D3566BC001996EE /* RepositoryOwnerModel.m in Sources */,
+				9494FAA81D356695001996EE /* RepoListRequestModel.m in Sources */,
+				9494FAB01D356C0A001996EE /* JSONValueTransformer+ISO8601.m in Sources */,
 				9494FA551D352546001996EE /* RepositoryTableViewCell.m in Sources */,
+				9494FAA91D356695001996EE /* RepositoryModel.m in Sources */,
+				9494FAA11D356624001996EE /* Repository.m in Sources */,
 				9494FA631D3529CF001996EE /* SearchRequest.m in Sources */,
 				9494FA5E1D35273C001996EE /* PHNetworkManager.m in Sources */,
 				9494FA501D35252C001996EE /* SearchTableViewController.m in Sources */,
-				9494FA691D354146001996EE /* Repository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

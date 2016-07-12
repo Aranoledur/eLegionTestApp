@@ -9,6 +9,8 @@
 #import "MainViewController.h"
 #import "RepositoryTableViewCell.h"
 
+#import "RepositoryModel.h"
+
 @interface MainViewController ()
 
 @end
@@ -17,7 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [RepositoryModel printKeyMapper];
 }
 
 - (void)didReceiveMemoryWarning {

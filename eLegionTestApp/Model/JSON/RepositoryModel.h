@@ -1,21 +1,20 @@
 //
-//  Repository.h
+//  RepositoryModel.h
 //  eLegionTestApp
 //
 //  Created by Nikolay Ischuk on 12.07.16.
 //  Copyright © 2016 Nikolay Ischuk. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <Realm/Realm.h>
+#import <JSONModel/JSONModel.h>
+#import "RepositoryOwnerModel.h"
 
-@class RepositoryOwner;
-@interface Repository : RLMObject
+@interface RepositoryModel : JSONModel
 
-@property NSNumber *_id;
+@property NSInteger _id;
 @property NSString *name;
 @property NSString *fullName;
-@property RepositoryOwner *owner;
+@property RepositoryOwnerModel *owner;
 @property BOOL _private;
 @property NSString *html_url;
 @property NSString *_description;
@@ -25,14 +24,16 @@
 @property NSDate *updated_at;
 @property NSDate *pushed_at;
 @property NSString *homepage;
-@property NSNumber *size;
-@property NSNumber *stargazers_count;
-@property NSNumber *watchers_count;
+@property NSInteger size;
+@property NSInteger stargazers_count;
+@property NSInteger watchers_count;
 @property NSString *language;
-@property NSNumber *forks_count;
-@property NSNumber *open_issues_count;
+@property NSInteger forks_count;
+@property NSInteger open_issues_count;
 @property NSString *master_branch;
 @property NSString *default_branch;
-@property NSNumber *score;
+@property NSInteger score;
+
++ (void)printKeyMapper;
 
 @end
