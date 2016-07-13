@@ -61,7 +61,9 @@
     if (data) {
         [cell setupWithRepoModel:data];
     }
-    cell.selected = [[DatabaseManager sharedInstance] repositoryExistsWithID:data._id];
+    if ([[DatabaseManager sharedInstance] repositoryExistsWithID:data._id]) {
+        [tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
+    }
     
     return cell;
 }
