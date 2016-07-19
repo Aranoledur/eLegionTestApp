@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		384B9414A6A68DB48270D7B0 /* Pods_eLegionTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97069F4B0C5201BE59EC6EB /* Pods_eLegionTestApp.framework */; };
+		9462EB7C1D3E9187005F8DA9 /* eLegionTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9462EB7B1D3E9187005F8DA9 /* eLegionTestAppUITests.swift */; };
 		9494FA321D352354001996EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FA311D352354001996EE /* main.m */; };
 		9494FA351D352354001996EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FA341D352354001996EE /* AppDelegate.m */; };
 		9494FA3B1D352354001996EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9494FA391D352354001996EE /* Main.storyboard */; };
@@ -26,9 +27,25 @@
 		9494FAAC1D3566BC001996EE /* RepositoryOwnerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FAAB1D3566BC001996EE /* RepositoryOwnerModel.m */; };
 		9494FAB01D356C0A001996EE /* JSONValueTransformer+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FAAF1D356C0A001996EE /* JSONValueTransformer+ISO8601.m */; };
 		9494FAB81D3575DB001996EE /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9494FAB71D3575DB001996EE /* DatabaseManager.m */; };
+		B41167B5B8F214CADB7C3650 /* Pods_eLegionTestAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B2A62C9B270386EFBED885 /* Pods_eLegionTestAppUITests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9462EB7E1D3E9187005F8DA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9494FA251D352354001996EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9494FA2C1D352354001996EE;
+			remoteInfo = eLegionTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		892A639E1A598DEA47A1A6BF /* Pods-eLegionTestAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eLegionTestAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eLegionTestAppUITests/Pods-eLegionTestAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9462EB741D3E90C2005F8DA9 /* eLegionTestApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eLegionTestApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		9462EB791D3E9187005F8DA9 /* eLegionTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eLegionTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9462EB7B1D3E9187005F8DA9 /* eLegionTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eLegionTestAppUITests.swift; sourceTree = "<group>"; };
+		9462EB7D1D3E9187005F8DA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9494FA2D1D352354001996EE /* eLegionTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eLegionTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9494FA311D352354001996EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9494FA331D352354001996EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,11 +81,21 @@
 		9494FAB61D3575DB001996EE /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
 		9494FAB71D3575DB001996EE /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
 		9E4558DF5D170837F4562423 /* Pods-eLegionTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eLegionTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-eLegionTestApp/Pods-eLegionTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		A9B2A62C9B270386EFBED885 /* Pods_eLegionTestAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eLegionTestAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADC00A90351B99BF012C7997 /* Pods-eLegionTestAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eLegionTestAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eLegionTestAppUITests/Pods-eLegionTestAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B11538F8EA588A77E0265764 /* Pods-eLegionTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eLegionTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eLegionTestApp/Pods-eLegionTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E97069F4B0C5201BE59EC6EB /* Pods_eLegionTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eLegionTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9462EB761D3E9187005F8DA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41167B5B8F214CADB7C3650 /* Pods_eLegionTestAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9494FA2A1D352354001996EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,10 +107,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9462EB7A1D3E9187005F8DA9 /* eLegionTestAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9462EB7B1D3E9187005F8DA9 /* eLegionTestAppUITests.swift */,
+				9462EB7D1D3E9187005F8DA9 /* Info.plist */,
+			);
+			path = eLegionTestAppUITests;
+			sourceTree = "<group>";
+		};
 		9494FA241D352354001996EE = {
 			isa = PBXGroup;
 			children = (
+				9462EB741D3E90C2005F8DA9 /* eLegionTestApp-Bridging-Header.h */,
 				9494FA2F1D352354001996EE /* eLegionTestApp */,
+				9462EB7A1D3E9187005F8DA9 /* eLegionTestAppUITests */,
 				9494FA2E1D352354001996EE /* Products */,
 				C1D43334528ED246E2A9F688 /* Pods */,
 				9C3B057875D18872C6C4941A /* Frameworks */,
@@ -94,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				9494FA2D1D352354001996EE /* eLegionTestApp.app */,
+				9462EB791D3E9187005F8DA9 /* eLegionTestAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				E97069F4B0C5201BE59EC6EB /* Pods_eLegionTestApp.framework */,
+				A9B2A62C9B270386EFBED885 /* Pods_eLegionTestAppUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,6 +271,8 @@
 			children = (
 				B11538F8EA588A77E0265764 /* Pods-eLegionTestApp.debug.xcconfig */,
 				9E4558DF5D170837F4562423 /* Pods-eLegionTestApp.release.xcconfig */,
+				ADC00A90351B99BF012C7997 /* Pods-eLegionTestAppUITests.debug.xcconfig */,
+				892A639E1A598DEA47A1A6BF /* Pods-eLegionTestAppUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -238,6 +280,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9462EB781D3E9187005F8DA9 /* eLegionTestAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9462EB801D3E9187005F8DA9 /* Build configuration list for PBXNativeTarget "eLegionTestAppUITests" */;
+			buildPhases = (
+				1E5096F6EAEFE39E53C48ADB /* [CP] Check Pods Manifest.lock */,
+				9462EB751D3E9187005F8DA9 /* Sources */,
+				9462EB761D3E9187005F8DA9 /* Frameworks */,
+				9462EB771D3E9187005F8DA9 /* Resources */,
+				E880EA34FDC8385849393DD8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9462EB7F1D3E9187005F8DA9 /* PBXTargetDependency */,
+			);
+			name = eLegionTestAppUITests;
+			productName = eLegionTestAppUITests;
+			productReference = 9462EB791D3E9187005F8DA9 /* eLegionTestAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		9494FA2C1D352354001996EE /* eLegionTestApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9494FA441D352354001996EE /* Build configuration list for PBXNativeTarget "eLegionTestApp" */;
@@ -264,9 +326,14 @@
 		9494FA251D352354001996EE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Nikolay Ischuk";
 				TargetAttributes = {
+					9462EB781D3E9187005F8DA9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 9494FA2C1D352354001996EE;
+					};
 					9494FA2C1D352354001996EE = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -286,11 +353,19 @@
 			projectRoot = "";
 			targets = (
 				9494FA2C1D352354001996EE /* eLegionTestApp */,
+				9462EB781D3E9187005F8DA9 /* eLegionTestAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9462EB771D3E9187005F8DA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9494FA2B1D352354001996EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,6 +393,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eLegionTestApp/Pods-eLegionTestApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E5096F6EAEFE39E53C48ADB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		580FD92ABC0D6F21B4122CAE /* [CP] Embed Pods Frameworks */ = {
@@ -350,9 +440,32 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		E880EA34FDC8385849393DD8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eLegionTestAppUITests/Pods-eLegionTestAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9462EB751D3E9187005F8DA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9462EB7C1D3E9187005F8DA9 /* eLegionTestAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9494FA291D352354001996EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,6 +489,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9462EB7F1D3E9187005F8DA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9494FA2C1D352354001996EE /* eLegionTestApp */;
+			targetProxy = 9462EB7E1D3E9187005F8DA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		9494FA391D352354001996EE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -396,6 +517,31 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9462EB811D3E9187005F8DA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADC00A90351B99BF012C7997 /* Pods-eLegionTestAppUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = eLegionTestAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.easyverzilla.eLegionTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_TARGET_NAME = eLegionTestApp;
+			};
+			name = Debug;
+		};
+		9462EB821D3E9187005F8DA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 892A639E1A598DEA47A1A6BF /* Pods-eLegionTestAppUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = eLegionTestAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.easyverzilla.eLegionTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = eLegionTestApp;
+			};
+			name = Release;
+		};
 		9494FA421D352354001996EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -485,10 +631,13 @@
 			baseConfigurationReference = B11538F8EA588A77E0265764 /* Pods-eLegionTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = eLegionTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.easyverzilla.eLegionTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "eLegionTestApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -497,16 +646,27 @@
 			baseConfigurationReference = 9E4558DF5D170837F4562423 /* Pods-eLegionTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = eLegionTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.easyverzilla.eLegionTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "eLegionTestApp-Bridging-Header.h";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9462EB801D3E9187005F8DA9 /* Build configuration list for PBXNativeTarget "eLegionTestAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9462EB811D3E9187005F8DA9 /* Debug */,
+				9462EB821D3E9187005F8DA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9494FA281D352354001996EE /* Build configuration list for PBXProject "eLegionTestApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

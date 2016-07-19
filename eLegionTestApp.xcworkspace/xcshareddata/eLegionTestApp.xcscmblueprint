@@ -1,14 +1,17 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B2065976EE4C90906E487BBEC33544C8FEF981B5",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "7EF6419A6EBDE94878B63B6AC36EFD2A705782B2" : 0,
+    "B2065976EE4C90906E487BBEC33544C8FEF981B5" : 0,
     "CB3AF4A848EDBFF382EA81376643A90DE42762C3" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "65F35521-E16D-4552-89F4-C27E9FD99BA2",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "7EF6419A6EBDE94878B63B6AC36EFD2A705782B2" : "PartyPlace-iOS\/",
+    "B2065976EE4C90906E487BBEC33544C8FEF981B5" : "eLegionTestApp\/",
     "CB3AF4A848EDBFF382EA81376643A90DE42762C3" : "Dating-iOS\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "eLegionTestApp",
@@ -19,6 +22,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:IngeniusSystems\/PartyPlace-iOS.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7EF6419A6EBDE94878B63B6AC36EFD2A705782B2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Aranoledur\/eLegionTestApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B2065976EE4C90906E487BBEC33544C8FEF981B5"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:IngeniusSystems\/Dating-iOS.git",

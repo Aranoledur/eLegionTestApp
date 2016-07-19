@@ -12,5 +12,10 @@ target 'eLegionTestApp' do
     pod 'ISO8601'
     pod 'AFNetworking'
     pod 'SDWebImage'
+    
+    target 'eLegionTestAppUITests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
 
 end
